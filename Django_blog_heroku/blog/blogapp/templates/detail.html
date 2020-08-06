@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block contents %}
+<body>
+    <div class="container">
+        <br>
+        <h3>해당 글의 자세한 내용입니다.</h3>
+        <br>
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">{{details.title}}</h5>
+                <h6 class="card-subtitle mb-2 text-muted">{{details.pub_date}}</h6>
+                <p class="card-text">{{details.body}}</p>
+            </div>
+        </div>    
+    </div>
+</body>
+{% endblock%}
+
+
